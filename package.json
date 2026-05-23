@@ -1,0 +1,12 @@
+{
+  "name": "petto-dashboard",
+  "version": "1.0.0",
+  "description": "Petto Dashboard High-Fidelity Desktop Native App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}
