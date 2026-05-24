@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="adoptions.css">
+  <link rel="stylesheet" href="adoption-form-modal.css">
 </head>
 <body>
 <div class="app-container">
@@ -26,7 +27,7 @@
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span>
           Adopciones
         </a>
-        <a href="#" class="nav-item" data-tab="adoptantes">
+        <a href="adoptantes.html" class="nav-item" data-tab="adoptantes">
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></span>
           Adoptantes
         </a>
@@ -34,7 +35,7 @@
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
           Seguimientos
         </a>
-        <a href="#" class="nav-item" data-tab="mascotas">
+        <a href="mascotas.html" class="nav-item" data-tab="mascotas">
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M19 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M5 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M12 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"/><path d="M19 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/><path d="M5 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/></svg></span>
           Mascotas
         </a>
@@ -42,11 +43,11 @@
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
           Calendario
         </a>
-        <a href="#" class="nav-item" data-tab="mensajes">
+        <a href="mensajes.html" class="nav-item" data-tab="mensajes">
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
           Mensajes
         </a>
-        <a href="#" class="nav-item" data-tab="tareas">
+        <a href="tareas.html" class="nav-item" data-tab="tareas">
           <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="m3 17 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>
           Mis tareas
         </a>
@@ -74,7 +75,6 @@
   <!-- MAIN CONTENT -->
   <main class="main-content">
 
-    <!-- TOP HEADER -->
     <header class="top-bar">
       <h1 class="page-title">Adopciones</h1>
       <div class="header-right">
@@ -82,52 +82,50 @@
           <span class="search-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
           </span>
-          <input type="text" id="searchInput" placeholder="Buscar adopción..." autocomplete="off">
+          <input type="text" id="searchInput" placeholder="Buscar adopciones..." autocomplete="off">
         </div>
-        <button class="notification-btn" id="notificationBtn">
+        <button class="notification-btn" id="notificationBtn" type="button" aria-label="Notificaciones">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
-          <span class="badge" id="notificationBadge">3</span>
+          <span class="badge">3</span>
         </button>
-        <div class="profile-avatar-btn">AP</div>
       </div>
     </header>
 
-    <!-- ACTION BAR -->
-    <div class="action-bar">
-      <div class="tab-group" id="tabGroup">
-        <button class="tab-btn active" data-filter="all">
-          Todas <span class="tab-count">10</span>
-        </button>
-        <button class="tab-btn" data-filter="proceso">
-          En proceso <span class="tab-count">5</span>
-        </button>
-        <button class="tab-btn" data-filter="aprobada">
-          Aprobado <span class="tab-count">3</span>
-        </button>
-        <button class="tab-btn" data-filter="rechazada">
-          Rechazado <span class="tab-count">2</span>
-        </button>
-      </div>
-      <div class="action-btn-group">
-        <button class="btn-secondary" id="sortBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
-          Ordenar
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        <button class="btn-secondary" id="filterBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
-          Filtros
-        </button>
-        <button class="btn-primary" id="newAdoptionBtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
-          Nueva adopción
-        </button>
-      </div>
+    <div class="page-toolbar">
+      <button class="dropdown-trigger" id="filterBtn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+        Filtros
+      </button>
+      <button class="dropdown-trigger" id="sortBtn" type="button">
+        Ordenar
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="page-toolbar-spacer"></div>
+      <button class="btn-primary" id="newAdoptionBtn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+        Nueva adopción
+      </button>
     </div>
 
-    <!-- TABLE CARD -->
-    <div class="table-card">
-      <table class="adoptions-table">
+    <div class="card adoptions-card">
+      <div class="card-header border-bottom adoptions-card-header">
+        <div class="filter-tabs" id="tabGroup">
+          <button class="tab-btn active" data-filter="all">
+            Todas <span class="tab-count">10</span>
+          </button>
+          <button class="tab-btn" data-filter="proceso">
+            En proceso <span class="tab-count">5</span>
+          </button>
+          <button class="tab-btn" data-filter="aprobada">
+            Aprobado <span class="tab-count">3</span>
+          </button>
+          <button class="tab-btn" data-filter="rechazada">
+            Rechazado <span class="tab-count">2</span>
+          </button>
+        </div>
+      </div>
+      <div class="table-scroll">
+      <table class="data-table adoptions-table">
         <thead>
           <tr>
             <th>Mascota</th>
@@ -141,112 +139,135 @@
         </thead>
         <tbody id="tableBody">
           <tr data-status="proceso">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#2cb67d;">M</div><span class="pet-name">Max</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon blue-bg pet-initial">M</div><span class="pet-name">Max</span></div></td>
             <td class="adopter-name">María García</td>
             <td class="code-cell">0001</td>
-            <td><span class="status-pill process">En proceso</span></td>
+            <td><span class="status-badge progress-tag">En proceso</span></td>
             <td class="stage-cell">Contrato firmado</td>
             <td class="date-cell">2026-04-20</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="aprobada">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#0061ef;">L</div><span class="pet-name">Luna</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon green-bg pet-initial">L</div><span class="pet-name">Luna</span></div></td>
             <td class="adopter-name">Juan Pérez</td>
             <td class="code-cell">0002</td>
-            <td><span class="status-pill approved">Aprobada</span></td>
+            <td><span class="status-badge success-tag">Aprobada</span></td>
             <td class="stage-cell">Completado</td>
             <td class="date-cell">2026-04-18</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="proceso">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#e76f51;">R</div><span class="pet-name">Rocky</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon orange-bg pet-initial">R</div><span class="pet-name">Rocky</span></div></td>
             <td class="adopter-name">Ana Rodríguez</td>
             <td class="code-cell">0003</td>
-            <td><span class="status-pill process">En proceso</span></td>
+            <td><span class="status-badge progress-tag">En proceso</span></td>
             <td class="stage-cell">Visita domiciliaria</td>
             <td class="date-cell">2026-04-22</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="proceso">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#3d5a80;">B</div><span class="pet-name">Bella</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon pink-bg pet-initial">B</div><span class="pet-name">Bella</span></div></td>
             <td class="adopter-name">Carlos López</td>
             <td class="code-cell">0004</td>
-            <td><span class="status-pill process">En proceso</span></td>
+            <td><span class="status-badge progress-tag">En proceso</span></td>
             <td class="stage-cell">Solicitud de adopción</td>
             <td class="date-cell">2026-04-21</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="aprobada">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#457b9d;">C</div><span class="pet-name">Charlie</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon blue-bg pet-initial">C</div><span class="pet-name">Charlie</span></div></td>
             <td class="adopter-name">Laura Martínez</td>
             <td class="code-cell">0005</td>
-            <td><span class="status-pill approved">Aprobada</span></td>
+            <td><span class="status-badge success-tag">Aprobada</span></td>
             <td class="stage-cell">Completado</td>
             <td class="date-cell">2026-04-15</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="rechazada">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#f4a261;">T</div><span class="pet-name">Toby</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon pink-bg pet-initial">T</div><span class="pet-name">Toby</span></div></td>
             <td class="adopter-name">Andrea Ruiz</td>
             <td class="code-cell">0006</td>
-            <td><span class="status-pill rejected">Rechazada</span></td>
+            <td><span class="status-badge alert-tag">Rechazada</span></td>
             <td class="stage-cell">Solicitud de adopción</td>
             <td class="date-cell">2026-04-10</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="proceso">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#e9c46a;">C</div><span class="pet-name">Coco</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon orange-bg pet-initial">C</div><span class="pet-name">Coco</span></div></td>
             <td class="adopter-name">Pedro Sánchez</td>
             <td class="code-cell">0007</td>
-            <td><span class="status-pill process">En proceso</span></td>
+            <td><span class="status-badge progress-tag">En proceso</span></td>
             <td class="stage-cell">Visita domiciliaria</td>
             <td class="date-cell">2026-04-19</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="aprobada">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#06d6a0;">M</div><span class="pet-name">Mia</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon green-bg pet-initial">M</div><span class="pet-name">Mía</span></div></td>
             <td class="adopter-name">Carmen Flores</td>
             <td class="code-cell">0008</td>
-            <td><span class="status-pill approved">Aprobada</span></td>
+            <td><span class="status-badge success-tag">Aprobada</span></td>
             <td class="stage-cell">Completado</td>
             <td class="date-cell">2026-04-12</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="rechazada">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#7b2d8b;">Z</div><span class="pet-name">Zeus</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon blue-bg pet-initial">Z</div><span class="pet-name">Zeus</span></div></td>
             <td class="adopter-name">Roberto Kim</td>
             <td class="code-cell">0009</td>
-            <td><span class="status-pill rejected">Rechazada</span></td>
+            <td><span class="status-badge alert-tag">Rechazada</span></td>
             <td class="stage-cell">Formulario</td>
             <td class="date-cell">2026-04-08</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
           <tr data-status="proceso">
-            <td><div class="pet-cell"><div class="pet-avatar" style="background:#48cae4;">L</div><span class="pet-name">Lola</span></div></td>
+            <td><div class="pet-cell"><div class="activity-icon blue-bg pet-initial">L</div><span class="pet-name">Lola</span></div></td>
             <td class="adopter-name">Sofía Torres</td>
             <td class="code-cell">0010</td>
-            <td><span class="status-pill process">En proceso</span></td>
+            <td><span class="status-badge progress-tag">En proceso</span></td>
             <td class="stage-cell">Contrato firmado</td>
             <td class="date-cell">2026-04-23</td>
-            <td><button class="detail-btn">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
+            <td class="actions-cell"><button type="button" class="action-link form-link">Ver formulario</button><button type="button" class="action-link detail-link">Ver detalles <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></button></td>
           </tr>
         </tbody>
       </table>
+      </div>
 
       <!-- TABLE FOOTER -->
       <div class="table-footer">
         <span class="table-count-label" id="countLabel">Mostrando 10 de 10 adopciones</span>
         <div class="pagination">
           <button class="page-btn active">1</button>
-          <button class="page-btn">2</button>
-          <button class="page-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </button>
         </div>
       </div>
     </div>
 
   </main>
+</div>
+
+<!-- FORMULARIO DE ADOPCIÓN -->
+<div class="modal-overlay" id="adoptionFormModal" aria-hidden="true">
+  <div class="modal-card adoption-form-modal" role="dialog" aria-labelledby="formModalTitle">
+    <div class="modal-header adoption-form-header">
+      <div class="modal-title-block">
+        <h2 id="formModalTitle">Formulario de Adopción</h2>
+        <p class="form-modal-subtitle" id="formModalSubtitle">Adopción 0001 • María García</p>
+      </div>
+      <button type="button" class="close-modal-btn" id="closeFormModalBtn" aria-label="Cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="adoption-form-body" id="adoptionFormBody"></div>
+    <div class="adoption-form-footer">
+      <span class="form-submitted-date" id="formSubmittedDate">Enviado el 2026-04-20</span>
+      <div class="form-footer-actions">
+        <button type="button" class="btn-form-reject" id="rejectFormBtn">Rechazar formulario</button>
+        <button type="button" class="btn-primary btn-form-approve" id="approveFormBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Aprobar formulario
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- TOAST -->
@@ -259,6 +280,7 @@
   </div>
 </div>
 
+<script src="adoption-form-modal.js"></script>
 <script src="adoptions-renderer.js"></script>
 </body>
 </html>

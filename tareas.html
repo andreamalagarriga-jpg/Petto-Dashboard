@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petto – Mis Tareas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tareas.css">
+</head>
+<body>
+<div class="app-container">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo"><h2>Petto</h2></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item" data-tab="inicio">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span>
+          Inicio
+        </a>
+        <a href="adoptions.html" class="nav-item" data-tab="adopciones">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span>
+          Adopciones
+        </a>
+        <a href="adoptantes.html" class="nav-item" data-tab="adoptantes">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></span>
+          Adoptantes
+        </a>
+        <a href="seguimientos.html" class="nav-item" data-tab="seguimientos">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+          Seguimientos
+        </a>
+        <a href="mascotas.html" class="nav-item" data-tab="mascotas">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M19 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M5 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M12 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"/><path d="M19 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/><path d="M5 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/></svg></span>
+          Mascotas
+        </a>
+        <a href="#" class="nav-item" data-tab="calendario">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
+          Calendario
+        </a>
+        <a href="mensajes.html" class="nav-item" data-tab="mensajes">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          Mensajes
+        </a>
+        <a href="tareas.html" class="nav-item active" data-tab="tareas">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="m3 17 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>
+          Mis tareas
+        </a>
+        <a href="#" class="nav-item" data-tab="equipo">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Equipo
+        </a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <a href="#" class="nav-item logout-btn">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg></span>
+        Cerrar sesión
+      </a>
+      <div class="profile-widget">
+        <div class="avatar">AP</div>
+        <div class="profile-info">
+          <span class="name">Andrea Perez</span>
+          <span class="role">Admin</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content tareas-page">
+
+    <header class="top-bar tareas-top-bar">
+      <div class="tareas-title-block">
+        <h1 class="page-title">Mis Tareas</h1>
+        <p class="tareas-subtitle" id="tasksSummaryLine">5 pendientes • 3 en progreso • 2 completadas</p>
+      </div>
+      <button class="btn-primary" id="newTaskBtn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+        Nueva tarea
+      </button>
+    </header>
+
+    <div class="tasks-stats-grid">
+      <div class="task-stat-card">
+        <div class="task-stat-text">
+          <span class="task-stat-number" id="statTotal">10</span>
+          <span class="task-stat-label">Total</span>
+        </div>
+        <span class="task-stat-icon icon-total" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg>
+        </span>
+      </div>
+      <div class="task-stat-card">
+        <div class="task-stat-text">
+          <span class="task-stat-number" id="statPending">5</span>
+          <span class="task-stat-label">Pendientes</span>
+        </div>
+        <span class="task-stat-icon icon-pending" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+        </span>
+      </div>
+      <div class="task-stat-card">
+        <div class="task-stat-text">
+          <span class="task-stat-number" id="statProgress">3</span>
+          <span class="task-stat-label">En progreso</span>
+        </div>
+        <span class="task-stat-icon icon-progress" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+      </div>
+      <div class="task-stat-card">
+        <div class="task-stat-text">
+          <span class="task-stat-number" id="statDone">2</span>
+          <span class="task-stat-label">Completadas</span>
+        </div>
+        <span class="task-stat-icon icon-done" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="page-toolbar tareas-toolbar">
+      <div class="search-box tareas-search">
+        <span class="search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+        </span>
+        <input type="text" id="searchInput" placeholder="Buscar tareas..." autocomplete="off">
+      </div>
+      <button class="btn-secondary" id="filtersBtn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+        Filtros
+      </button>
+    </div>
+
+    <div class="filter-tabs page-filter-tabs tareas-category-tabs" id="categoryTabs">
+      <button type="button" class="tab-btn active" data-category="all">Todas <span class="tab-count" data-tab-count="all">10</span></button>
+      <button type="button" class="tab-btn" data-category="formularios">Formularios <span class="tab-count" data-tab-count="formularios">3</span></button>
+      <button type="button" class="tab-btn" data-category="visitas">Visitas <span class="tab-count" data-tab-count="visitas">2</span></button>
+      <button type="button" class="tab-btn" data-category="aprobaciones">Aprobaciones <span class="tab-count" data-tab-count="aprobaciones">1</span></button>
+      <button type="button" class="tab-btn" data-category="documentos">Documentos <span class="tab-count" data-tab-count="documentos">2</span></button>
+      <button type="button" class="tab-btn" data-category="entregas">Entregas <span class="tab-count" data-tab-count="entregas">1</span></button>
+      <button type="button" class="tab-btn" data-category="seguimientos">Seguimientos <span class="tab-count" data-tab-count="seguimientos">1</span></button>
+    </div>
+
+    <div class="card tareas-card">
+      <div class="task-list" id="taskList">
+
+        <article class="task-item" data-status="pendiente" data-category="formularios" data-priority="alta">
+          <span class="task-check pending" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Revisar formulario</h3>
+            <p class="task-desc">Formulario de adopción de María García — pendiente de revisión</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Formularios</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                María García
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                24 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge neutral-tag">Pendiente</span>
+            <span class="priority-badge priority-alta">Alta</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="progreso" data-category="visitas" data-priority="media">
+          <span class="task-check progress" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Coordinar visita domiciliaria</h3>
+            <p class="task-desc">Agendar visita al hogar de Juan Pérez para evaluación del espacio</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Visitas</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Juan Pérez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                25 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge progress-tag">En progreso</span>
+            <span class="priority-badge priority-media">Media</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="pendiente" data-category="aprobaciones" data-priority="alta">
+          <span class="task-check pending" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Aprobar solicitud de adopción</h3>
+            <p class="task-desc">Revisar expediente completo de Ana Rodríguez para Max</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Aprobaciones</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Ana Rodríguez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                23 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge neutral-tag">Pendiente</span>
+            <span class="priority-badge priority-alta">Alta</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="progreso" data-category="documentos" data-priority="media">
+          <span class="task-check progress" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Subir contrato de adopción</h3>
+            <p class="task-desc">Digitalizar y cargar contrato firmado de Luna con Carlos Méndez</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Documentos</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Carlos Méndez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                22 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge progress-tag">En progreso</span>
+            <span class="priority-badge priority-media">Media</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="pendiente" data-category="entregas" data-priority="alta">
+          <span class="task-check pending" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Preparar entrega de mascota</h3>
+            <p class="task-desc">Kit de bienvenida y documentación para entrega de Bella</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Entregas</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Rodrigo Rodríguez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                26 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge neutral-tag">Pendiente</span>
+            <span class="priority-badge priority-alta">Alta</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="completada" data-category="seguimientos" data-priority="baja">
+          <span class="task-check done" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Seguimiento post-adopción Luna</h3>
+            <p class="task-desc">Llamada de seguimiento a los 7 días — adaptación positiva</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Seguimientos</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Juan Pérez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                20 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge success-tag">Completada</span>
+            <span class="priority-badge priority-baja">Baja</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="pendiente" data-category="formularios" data-priority="media">
+          <span class="task-check pending" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Validar historial veterinario</h3>
+            <p class="task-desc">Revisar cartilla de vacunación de Rocky antes de la visita</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Formularios</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Laura Sánchez
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                24 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge neutral-tag">Pendiente</span>
+            <span class="priority-badge priority-media">Media</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="progreso" data-category="visitas" data-priority="opcional">
+          <span class="task-check progress" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Confirmar cita de visita</h3>
+            <p class="task-desc">Confirmar horario con Patricia López para visita con Milo</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Visitas</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Patricia López
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                27 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge progress-tag">En progreso</span>
+            <span class="priority-badge priority-opcional">Opcional</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="completada" data-category="documentos" data-priority="baja">
+          <span class="task-check done" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Revisar documentación adoptante</h3>
+            <p class="task-desc">INE y comprobante de domicilio verificados para Sofía Martín</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Documentos</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Sofía Martín
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                19 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge success-tag">Completada</span>
+            <span class="priority-badge priority-baja">Baja</span>
+          </div>
+        </article>
+
+        <article class="task-item" data-status="pendiente" data-category="formularios" data-priority="baja">
+          <span class="task-check pending" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg>
+          </span>
+          <div class="task-body">
+            <h3 class="task-title">Completar evaluación pre-adopción</h3>
+            <p class="task-desc">Cuestionario de compatibilidad para adopción de Coco</p>
+            <div class="task-meta">
+              <span class="task-category-tag">Formularios</span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Miguel Torres
+              </span>
+              <span class="task-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                28 may 2026
+              </span>
+            </div>
+          </div>
+          <div class="task-badges">
+            <span class="status-badge neutral-tag">Pendiente</span>
+            <span class="priority-badge priority-baja">Baja</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div class="toast" id="successToast">
+  <div class="toast-content">
+    <span class="toast-check-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </span>
+    <p id="toastMessage">Acción completada</p>
+  </div>
+</div>
+
+<script src="tareas-renderer.js"></script>
+</body>
+</html>
