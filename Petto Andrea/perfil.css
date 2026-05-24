@@ -1,0 +1,106 @@
+/* Perfil page */
+
+.perfil-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 1100px;
+}
+
+.perfil-header-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 24px;
+}
+
+.perfil-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-light-blue));
+  flex-shrink: 0;
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 97, 239, 0.18);
+}
+
+.perfil-id { display: flex; flex-direction: column; gap: 4px; }
+
+.perfil-name {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-dark-blue);
+  letter-spacing: -0.4px;
+}
+
+.perfil-role {
+  font-size: 14px;
+  color: var(--text-2, var(--text-muted));
+  font-weight: 500;
+}
+
+.perfil-since {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.info-section-title {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark-blue);
+  margin-bottom: 18px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.info-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.info-value {
+  display: block;
+  font-size: 14px;
+  color: var(--text-main);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.perfil-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.perfil-stat-card {
+  background: var(--bg-primary);
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.perfil-stat-num {
+  font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-dark-blue);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.perfil-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}

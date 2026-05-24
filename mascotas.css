@@ -14,23 +14,13 @@
   padding-bottom: 10px;
 }
 
-.mascotas-card {
-  padding: 0;
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
+.mascotas-toolbar {
   display: flex;
-  flex-direction: column;
-}
-
-.mascotas-card-toolbar {
-  margin-bottom: 0;
-  padding: 20px 24px;
-}
-
-.mascotas-card-toolbar.border-bottom {
-  padding-bottom: 16px;
-  margin-bottom: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
 }
 
 .cases-title {
@@ -103,11 +93,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  padding: 20px 24px 24px;
 }
 
 .pets-table-wrap {
-  padding: 8px 12px 20px;
+  padding: 0;
 }
 
 .pets-table-wrap.hidden {

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petto – Mascotas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mascotas.css">
+</head>
+<body>
+<div class="app-container">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo"><h2>Petto</h2></div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item" data-tab="inicio">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span>
+          Inicio
+        </a>
+        <a href="adoptions.html" class="nav-item" data-tab="adopciones">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span>
+          Adopciones
+        </a>
+        <a href="adoptantes.html" class="nav-item" data-tab="adoptantes">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg></span>
+          Adoptantes
+        </a>
+        <a href="seguimientos.html" class="nav-item" data-tab="seguimientos">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+          Seguimientos
+        </a>
+        <a href="mascotas.html" class="nav-item active" data-tab="mascotas">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M19 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M5 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M12 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"/><path d="M19 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/><path d="M5 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/></svg></span>
+          Mascotas
+        </a>
+        <a href="calendario.html" class="nav-item" data-tab="calendario">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg></span>
+          Calendario
+        </a>
+        <a href="mensajes.html" class="nav-item" data-tab="mensajes">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          Mensajes
+        </a>
+        <a href="tareas.html" class="nav-item" data-tab="tareas">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="m3 17 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></span>
+          Mis tareas
+        </a>
+        <a href="equipo.html" class="nav-item" data-tab="equipo">
+          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          Equipo
+        </a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <a href="#" class="nav-item logout-btn">
+        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg></span>
+        Cerrar sesión
+      </a>
+      <a href="perfil.html" class="profile-widget" style="text-decoration:none;">
+        <div class="avatar">AP</div>
+        <div class="profile-info">
+          <span class="name">Andrea Perez</span>
+          <span class="role">Admin</span>
+        </div>
+    </a>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="top-bar">
+      <h1 class="page-title">Mascotas</h1>
+      <button class="btn-primary" id="addPetBtn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+        Agregar mascota
+      </button>
+    </header>
+
+    <div class="filter-tabs page-filter-tabs" id="tabGroup">
+      <button type="button" class="tab-btn active" data-filter="all">Todos</button>
+      <button type="button" class="tab-btn" data-filter="adoptado">Adoptados</button>
+      <button type="button" class="tab-btn" data-filter="disponible">Disponibles</button>
+    </div>
+
+    <div class="card mascotas-card">
+      <div class="card-header border-bottom mascotas-card-toolbar">
+        <h2 class="cases-title">Casos <span class="count" id="casesCount">(10)</span></h2>
+        <div class="card-toolbar-right">
+          <div class="search-box search-box-compact">
+            <span class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+            </span>
+            <input type="text" id="searchInput" placeholder="Buscar..." autocomplete="off">
+          </div>
+          <button class="dropdown-trigger" id="sortBtn" type="button">
+            Ordenar
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="view-toggle" role="group" aria-label="Vista">
+            <button type="button" class="view-toggle-btn active" id="gridViewBtn" aria-pressed="true" title="Vista en cuadrícula">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </button>
+            <button type="button" class="view-toggle-btn" id="tableViewBtn" aria-pressed="false" title="Vista en tabla">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pets-content-scroll">
+        <div class="pets-grid" id="petsGrid">
+
+          <article class="pet-card" data-status="disponible" data-species="Perro" data-age="3">
+            <div class="pet-card-image-wrap tone-pink">
+              <img class="pet-card-image" src="assets/pets/max.jpg" alt="Max, perro" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Max</h3>
+                <span class="status-badge success-tag">Disponible</span>
+              </div>
+              <p class="pet-card-meta">Perro • 3 años</p>
+              <p class="pet-card-adoption is-available">Disponible para adopción</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="adoptado" data-species="Gato" data-age="2">
+            <div class="pet-card-image-wrap tone-lavender">
+              <img class="pet-card-image" src="assets/pets/luna.jpg" alt="Luna, gato" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Luna</h3>
+                <span class="status-badge neutral-tag">Adoptado</span>
+              </div>
+              <p class="pet-card-meta">Gato • 2 años</p>
+              <p class="pet-card-adoption">Adoptado: 2026-03-15</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="disponible" data-species="Perro" data-age="5">
+            <div class="pet-card-image-wrap tone-mint">
+              <img class="pet-card-image" src="assets/pets/bella.jpg" alt="Bella, perro" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Bella</h3>
+                <span class="status-badge success-tag">Disponible</span>
+              </div>
+              <p class="pet-card-meta">Perro • 5 años</p>
+              <p class="pet-card-adoption is-available">Disponible para adopción</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="adoptado" data-species="Gato" data-age="1">
+            <div class="pet-card-image-wrap tone-sky">
+              <img class="pet-card-image" src="assets/pets/milo.jpg" alt="Milo, gato" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Milo</h3>
+                <span class="status-badge neutral-tag">Adoptado</span>
+              </div>
+              <p class="pet-card-meta">Gato • 1 año</p>
+              <p class="pet-card-adoption">Adoptado: 2026-02-28</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="disponible" data-species="Perro" data-age="4">
+            <div class="pet-card-image-wrap tone-peach">
+              <img class="pet-card-image" src="assets/pets/rocky.jpg" alt="Rocky, perro" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Rocky</h3>
+                <span class="status-badge success-tag">Disponible</span>
+              </div>
+              <p class="pet-card-meta">Perro • 4 años</p>
+              <p class="pet-card-adoption is-available">Disponible para adopción</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="adoptado" data-species="Gato" data-age="3">
+            <div class="pet-card-image-wrap tone-pink">
+              <img class="pet-card-image" src="assets/pets/nala.jpg" alt="Nala, gato" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Nala</h3>
+                <span class="status-badge neutral-tag">Adoptado</span>
+              </div>
+              <p class="pet-card-meta">Gato • 3 años</p>
+              <p class="pet-card-adoption">Adoptado: 2026-01-20</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="disponible" data-species="Perro" data-age="2">
+            <div class="pet-card-image-wrap tone-lavender">
+              <img class="pet-card-image" src="assets/pets/coco.jpg" alt="Coco, perro" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Coco</h3>
+                <span class="status-badge success-tag">Disponible</span>
+              </div>
+              <p class="pet-card-meta">Perro • 2 años</p>
+              <p class="pet-card-adoption is-available">Disponible para adopción</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="adoptado" data-species="Gato" data-age="4">
+            <div class="pet-card-image-wrap tone-mint">
+              <img class="pet-card-image" src="assets/pets/simba.jpg" alt="Simba, gato" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Simba</h3>
+                <span class="status-badge neutral-tag">Adoptado</span>
+              </div>
+              <p class="pet-card-meta">Gato • 4 años</p>
+              <p class="pet-card-adoption">Adoptado: 2026-03-02</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="disponible" data-species="Perro" data-age="6">
+            <div class="pet-card-image-wrap tone-sky">
+              <img class="pet-card-image" src="assets/pets/toby.jpg" alt="Toby, perro" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Toby</h3>
+                <span class="status-badge success-tag">Disponible</span>
+              </div>
+              <p class="pet-card-meta">Perro • 6 años</p>
+              <p class="pet-card-adoption is-available">Disponible para adopción</p>
+            </div>
+          </article>
+
+          <article class="pet-card" data-status="adoptado" data-species="Gato" data-age="2">
+            <div class="pet-card-image-wrap tone-peach">
+              <img class="pet-card-image" src="assets/pets/lola.jpg" alt="Lola, gato" loading="lazy">
+            </div>
+            <div class="pet-card-body">
+              <div class="pet-card-title-row">
+                <h3 class="pet-card-name">Lola</h3>
+                <span class="status-badge neutral-tag">Adoptado</span>
+              </div>
+              <p class="pet-card-meta">Gato • 2 años</p>
+              <p class="pet-card-adoption">Adoptado: 2026-04-10</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="pets-table-wrap hidden" id="petsTableWrap">
+          <table class="data-table mascotas-table">
+            <thead>
+              <tr>
+                <th>Mascota</th>
+                <th>Especie</th>
+                <th>Edad</th>
+                <th>Estado</th>
+                <th>Adopción</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<div class="toast" id="successToast">
+  <div class="toast-content">
+    <span class="toast-check-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </span>
+    <p id="toastMessage">Acción completada</p>
+  </div>
+</div>
+
+<script src="mascotas-renderer.js"></script>
+</body>
+</html>

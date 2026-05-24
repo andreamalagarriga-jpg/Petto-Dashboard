@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petto – Perfil de Adoptante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="adoptante-detail.css">
+</head>
+<body>
+<div class="app-container">
+
+  <div id="sidebar-slot" data-active="adoptantes"></div>
+
+  <main class="main-content adoptante-detail-page">
+    <header class="top-bar slim-topbar">
+      <div class="topbar-search-block">
+        <div class="search-box">
+          <span class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+          </span>
+          <input type="text" placeholder="Buscar..." autocomplete="off">
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="icon-help" type="button" aria-label="Ayuda">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+        </button>
+        <button class="notification-btn" id="notificationBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        </button>
+        <div class="user-circle">AP</div>
+      </div>
+    </header>
+
+    <div class="detail-scroll">
+
+      <a href="adoptantes.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Volver a adoptantes
+      </a>
+
+      <header class="adoptante-header">
+        <div class="adoptante-id-block">
+          <div class="adoptante-photo"></div>
+          <div>
+            <h1 class="page-title">María García</h1>
+            <p class="adoptante-meta">ID: 1 • Adoptante desde 2025</p>
+          </div>
+        </div>
+        <div class="adoptante-actions">
+          <button class="btn-secondary" id="editAdopterBtn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Editar perfil
+          </button>
+          <button class="btn-secondary" id="historyBtn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Historial de Seguimiento
+          </button>
+        </div>
+      </header>
+
+      <div class="adoptante-tabs">
+        <button type="button" class="adoptante-tab active" data-tab="datos">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Datos personales
+        </button>
+        <button type="button" class="adoptante-tab" data-tab="mascotas">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="6.5" cy="14.5" r="2"/><circle cx="15.5" cy="14.5" r="2"/><path d="M8 20c0-2 4-4 4-4s4 2 4 4-1.5 2-4 2-4 0-4-2"/></svg>
+          Mascotas (2)
+        </button>
+      </div>
+
+      <section class="tab-panel active" data-panel="datos">
+        <div class="datos-grid">
+
+          <div class="card">
+            <h3 class="info-section-title">Información de contacto</h3>
+            <div class="contact-row">
+              <div class="contact-text">
+                <span class="info-label">Email</span>
+                <span class="info-value">maria@email.com</span>
+              </div>
+              <button class="contact-action" type="button" aria-label="Enviar email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+              </button>
+            </div>
+            <div class="contact-row">
+              <div class="contact-text">
+                <span class="info-label">Teléfono</span>
+                <span class="info-value">555-0101</span>
+              </div>
+              <button class="contact-action" type="button" aria-label="Llamar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </button>
+            </div>
+            <div class="contact-row no-border">
+              <div class="contact-text">
+                <span class="info-label">Dirección</span>
+                <span class="info-value">Calle Principal 123, Ciudad</span>
+              </div>
+              <button class="contact-action" type="button" aria-label="Ver mapa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="info-section-title">Historial</h3>
+            <ul class="history-list">
+              <li class="history-item">
+                <span class="history-dot"></span>
+                <div class="history-body">
+                  <span class="history-title">Adopción aprobada</span>
+                  <span class="history-sub">Max - Perro mediano</span>
+                  <span class="history-date">2026-03-15</span>
+                </div>
+                <button type="button" class="link-action">Ver</button>
+              </li>
+              <li class="history-item">
+                <span class="history-dot"></span>
+                <div class="history-body">
+                  <span class="history-title">Visita de seguimiento</span>
+                  <span class="history-sub">Visita completada exitosamente</span>
+                  <span class="history-date">2026-04-10</span>
+                </div>
+                <button type="button" class="link-action">Ver</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="documents-title">Documentos</h3>
+        <div class="documents-list">
+          <div class="doc-row">
+            <div class="doc-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div class="doc-body"><span class="doc-name">Identificación oficial</span><span class="doc-meta">PDF • 2.4 MB</span></div>
+            <button type="button" class="link-action">Ver</button>
+          </div>
+          <div class="doc-row">
+            <div class="doc-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div class="doc-body"><span class="doc-name">Comprobante de domicilio</span><span class="doc-meta">PDF • 2.4 MB</span></div>
+            <button type="button" class="link-action">Ver</button>
+          </div>
+          <div class="doc-row">
+            <div class="doc-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div class="doc-body"><span class="doc-name">Contrato firmado</span><span class="doc-meta">PDF • 2.4 MB</span></div>
+            <button type="button" class="link-action">Ver</button>
+          </div>
+          <div class="doc-row">
+            <div class="doc-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div class="doc-body"><span class="doc-name">Formulario de adopción</span><span class="doc-meta">PDF • 2.4 MB</span></div>
+            <button type="button" class="link-action">Ver</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="mascotas">
+        <div class="pet-cards-grid">
+          <a href="mascota-detail.html?id=max" class="pet-card-link">
+            <article class="pet-card">
+              <div class="pet-card-img"><img src="assets/pets/max.jpg" alt="Max" loading="lazy"></div>
+              <h3 class="pet-card-name">Max</h3>
+              <p class="pet-card-meta">Perro • 3 años</p>
+              <p class="pet-card-foot">Adoptado: 2026-03-15</p>
+            </article>
+          </a>
+          <a href="mascota-detail.html?id=luna" class="pet-card-link">
+            <article class="pet-card">
+              <div class="pet-card-img"><img src="assets/pets/luna.jpg" alt="Luna" loading="lazy"></div>
+              <h3 class="pet-card-name">Luna</h3>
+              <p class="pet-card-meta">Perro • 1 año</p>
+              <p class="pet-card-foot">Adoptado: 2026-02-20</p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="successToast">
+  <div class="toast-content">
+    <span class="toast-check-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </span>
+    <p id="toastMessage">Acción completada</p>
+  </div>
+</div>
+
+<script src="petto-sidebar.js"></script>
+<script src="adoptante-detail-renderer.js"></script>
+</body>
+</html>

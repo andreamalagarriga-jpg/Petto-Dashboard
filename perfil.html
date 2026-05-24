@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petto – Perfil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+<div class="app-container">
+
+  <div id="sidebar-slot" data-active=""></div>
+
+  <main class="main-content perfil-page">
+    <header class="top-bar">
+      <h1 class="page-title">Perfil</h1>
+      <div class="header-right">
+        <button class="btn-secondary" id="editProfileBtn" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Editar perfil
+        </button>
+      </div>
+    </header>
+
+    <section class="perfil-grid">
+
+      <div class="card perfil-header-card">
+        <div class="perfil-avatar"></div>
+        <div class="perfil-id">
+          <h2 class="perfil-name">Andrea Perez</h2>
+          <p class="perfil-role">Coordinadora</p>
+          <p class="perfil-since">Miembro desde Enero 2024</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="info-section-title">Información de contacto</h3>
+        <div class="info-grid">
+          <div>
+            <span class="info-label">Email</span>
+            <span class="info-value">andrea@petto.org</span>
+          </div>
+          <div>
+            <span class="info-label">Teléfono</span>
+            <span class="info-value">555-0123</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="info-section-title">Detalles de la organización</h3>
+        <div class="info-grid">
+          <div>
+            <span class="info-label">Organización</span>
+            <span class="info-value">Refugio Animal Petto</span>
+          </div>
+          <div>
+            <span class="info-label">Ubicación</span>
+            <span class="info-value">Ciudad de México</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="info-section-title">Estadísticas</h3>
+        <div class="perfil-stats">
+          <div class="perfil-stat-card">
+            <span class="perfil-stat-num">45</span>
+            <span class="perfil-stat-label">Adopciones gestionadas</span>
+          </div>
+          <div class="perfil-stat-card">
+            <span class="perfil-stat-num">128</span>
+            <span class="perfil-stat-label">Seguimientos realizados</span>
+          </div>
+          <div class="perfil-stat-card">
+            <span class="perfil-stat-num">23</span>
+            <span class="perfil-stat-label">Mascotas registradas</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</div>
+
+<div class="toast" id="successToast">
+  <div class="toast-content">
+    <span class="toast-check-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </span>
+    <p id="toastMessage">Acción completada</p>
+  </div>
+</div>
+
+<script src="petto-sidebar.js"></script>
+<script src="perfil-renderer.js"></script>
+</body>
+</html>

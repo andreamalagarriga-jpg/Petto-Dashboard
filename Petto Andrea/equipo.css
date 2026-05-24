@@ -1,0 +1,232 @@
+/* Equipo page specifics */
+
+.equipo-page .top-bar { align-items: flex-start; margin-bottom: 24px; }
+
+.team-title-block .page-title { line-height: 1.05; }
+
+.team-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.team-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.team-stat-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: var(--transition-smooth);
+}
+
+.team-stat-card:hover {
+  border-color: var(--primary-ultra-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.team-stat-num {
+  font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text-dark-blue);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.team-stat-card.stat-green .team-stat-num { color: var(--badge-process-text); }
+.team-stat-card.stat-blue .team-stat-num  { color: var(--primary-blue); }
+.team-stat-card.stat-purple .team-stat-num { color: #7c3aed; }
+
+.team-stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.team-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.view-toggle-btn {
+  width: 34px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.view-toggle-btn.active {
+  background: var(--sidebar-bg);
+  color: #ffffff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.team-grid.list-view {
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 20px;
+  padding: 20px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-ultra-light);
+}
+
+.member-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.member-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.member-more {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  color: var(--text-muted);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.member-more:hover { background: var(--bg-primary); color: var(--text-main); }
+
+.member-name {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark-blue);
+}
+
+.member-role {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.member-contact {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.member-contact div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.member-stats {
+  display: flex;
+  gap: 18px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.member-stat {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.member-stat strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark-blue);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.member-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.member-last {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Modal: centered title variant */
+.modal-center-title {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-dark-blue);
+  text-align: center;
+  margin-bottom: 22px;
+  margin-top: 6px;
+}
+
+.member-submit {
+  width: 240px;
+  align-self: center;
+  margin: 12px auto 0;
+}
+
+.modal-card { position: relative; }

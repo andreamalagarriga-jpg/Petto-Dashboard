@@ -1,0 +1,54 @@
+/* Adoptantes — layout overrides; tokens & components live in styles.css */
+
+.main-content {
+  overflow: hidden;
+}
+
+.adoptantes-card {
+  padding: 0;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-scroll {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.adoptantes-table th:first-child  { width: 200px; }
+.adoptantes-table th:nth-child(2) { width: 220px; }
+.adoptantes-table th:nth-child(3) { width: 150px; }
+.adoptantes-table th:nth-child(4) { width: 90px; }
+.adoptantes-table th:nth-child(5) { width: 130px; }
+.adoptantes-table th:last-child   { width: 130px; }
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.person-initial {
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.person-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.muted-cell {
+  color: #4a5565;
+}
+
+.num-cell {
+  font-weight: 600;
+  color: var(--text-dark-blue);
+}

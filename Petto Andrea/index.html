@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petto Dashboard</title>
+  <!-- Google Fonts for premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="logo">
+          <h2>Petto</h2>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-item active" data-tab="inicio">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+            </span>
+            Inicio
+          </a>
+          <a href="adoptions.html" class="nav-item" data-tab="adopciones">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+            </span>
+            Adopciones
+          </a>
+          <a href="adoptantes.html" class="nav-item" data-tab="adoptantes">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+            </span>
+            Adoptantes
+          </a>
+          <a href="seguimientos.html" class="nav-item" data-tab="seguimientos">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </span>
+            Seguimientos
+          </a>
+          <a href="mascotas.html" class="nav-item" data-tab="mascotas">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M19 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M5 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M12 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"/><path d="M19 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/><path d="M5 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/></svg>
+            </span>
+            Mascotas
+          </a>
+          <a href="calendario.html" class="nav-item" data-tab="calendario">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            </span>
+            Calendario
+          </a>
+          <a href="mensajes.html" class="nav-item" data-tab="mensajes">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            Mensajes
+          </a>
+          <a href="tareas.html" class="nav-item" data-tab="tareas">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="6" height="6" rx="1"/><path d="m3 17 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/><rect x="3" y="11" width="6" height="6" rx="1"/></svg>
+            </span>
+            Mis tareas
+          </a>
+          <a href="equipo.html" class="nav-item" data-tab="equipo">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            Equipo
+          </a>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item logout-btn">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+          </span>
+          Cerrar sesión
+        </a>
+        <a href="perfil.html" class="profile-widget" style="text-decoration:none;">
+          <div class="avatar">AP</div>
+          <div class="profile-info">
+            <span class="name">Andrea Perez</span>
+            <span class="role">Admin</span>
+          </div>
+      </a>
+    </aside>
+
+    <!-- MAIN VIEW AREA -->
+    <main class="main-content">
+      
+      <!-- TOP HEADER BAR -->
+      <header class="top-bar">
+        <h1 class="page-title">Overview</h1>
+        <div class="header-right">
+          <!-- Search box -->
+          <div class="search-box">
+            <span class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+            </span>
+            <input type="text" id="searchInput" placeholder="Buscar..." autocomplete="off">
+          </div>
+          <!-- Month/Date selector -->
+          <div class="date-filter">
+            <span id="currentDateDisplay">Abril 2026</span>
+          </div>
+          <!-- Notification Bell -->
+          <button class="notification-btn" id="notificationBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            <span class="badge" id="notificationBadge">3</span>
+          </button>
+
+          <!-- Notification Dropdown Panel -->
+          <div class="notification-dropdown" id="notificationDropdown">
+            <div class="dropdown-header">
+              <h3>Notificaciones</h3>
+              <a href="#" id="clearNotifications">Marcar como leídas</a>
+            </div>
+            <div class="dropdown-list" id="notificationList">
+              <div class="notification-item" data-id="1">
+                <span class="dot"></span>
+                <div class="notif-body">
+                  <p class="notif-text">Nueva solicitud de adopción recibida para <strong>María García</strong>.</p>
+                  <span class="notif-time">Hace 10 min</span>
+                </div>
+              </div>
+              <div class="notification-item" data-id="2">
+                <span class="dot"></span>
+                <div class="notif-body">
+                  <p class="notif-text">Alerta de vacunación programada para hoy.</p>
+                  <span class="notif-time">Hace 1 hora</span>
+                </div>
+              </div>
+              <div class="notification-item" data-id="3">
+                <span class="dot"></span>
+                <div class="notif-body">
+                  <p class="notif-text">Visita de seguimiento aprobada por Andrea Perez.</p>
+                  <span class="notif-time">Hace 4 horas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- DASHBOARD CARDS GRID LAYOUT -->
+      <section class="dashboard-grid">
+        
+        <!-- MIDDLE COLUMN -->
+        <div class="middle-column">
+          
+          <!-- Card 1: Graph -->
+          <div class="card graph-card">
+            <div class="card-header">
+              <div class="header-text">
+                <h2 id="totalAdoptionsTitle"><span class="count">420</span> Adopciones</h2>
+                <span class="subtitle">Enero-Diciembre 2026</span>
+              </div>
+              <button class="dropdown-trigger">
+                Todo el año
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+            
+            <div class="chart-container">
+              <!-- Grid columns dynamically populated for 12 months with variations -->
+              <div class="chart-bar-wrapper" data-month="Ene" data-val="28">
+                <div class="chart-bar" style="--bar-height: 50%;"></div>
+                <span class="month-label">Ene</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Feb" data-val="42">
+                <div class="chart-bar" style="--bar-height: 75%;"></div>
+                <span class="month-label">Feb</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Mar" data-val="25">
+                <div class="chart-bar" style="--bar-height: 45%;"></div>
+                <span class="month-label">Mar</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Abr" data-val="36">
+                <div class="chart-bar" style="--bar-height: 65%;"></div>
+                <span class="month-label">Abr</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="May" data-val="18">
+                <div class="chart-bar" style="--bar-height: 32%;"></div>
+                <span class="month-label">May</span>
+              </div>
+              <div class="chart-bar-wrapper active" data-month="Jun" data-val="60">
+                <div class="chart-bar" style="--bar-height: 98%;"></div>
+                <span class="month-label">Jun</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Jul" data-val="48">
+                <div class="chart-bar" style="--bar-height: 85%;"></div>
+                <span class="month-label">Jul</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Ago" data-val="50">
+                <div class="chart-bar" style="--bar-height: 88%;"></div>
+                <span class="month-label">Ago</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Sep" data-val="22">
+                <div class="chart-bar" style="--bar-height: 40%;"></div>
+                <span class="month-label">Sep</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Oct" data-val="38">
+                <div class="chart-bar" style="--bar-height: 70%;"></div>
+                <span class="month-label">Oct</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Nov" data-val="28">
+                <div class="chart-bar" style="--bar-height: 50%;"></div>
+                <span class="month-label">Nov</span>
+              </div>
+              <div class="chart-bar-wrapper" data-month="Dic" data-val="25">
+                <div class="chart-bar" style="--bar-height: 45%;"></div>
+                <span class="month-label">Dic</span>
+              </div>
+              <div id="chartTooltip" class="chart-tooltip">60 Adopciones</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Recent Activity -->
+          <div class="card activity-card">
+            <div class="card-header border-bottom">
+              <h2>Actividad Reciente</h2>
+              <span class="action-link">Ver todo</span>
+            </div>
+            <div class="activity-list" id="activityList">
+              
+              <!-- Item 1 -->
+              <div class="activity-item" data-search="nueva solicitud adopcion maria garcia perro mediano en proceso">
+                <div class="activity-left">
+                  <div class="activity-icon blue-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M19 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M5 8c.67 0 1.2-.32 1.6-.75a3 3 0 0 0-4.8 0c.4.43.93.75 1.6.75Z"/><path d="M12 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"/><path d="M19 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/><path d="M5 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Z"/></svg>
+                  </div>
+                  <div class="activity-text">
+                    <h4 class="title">Nueva solicitud de adopción</h4>
+                    <p class="details">María García - Perro mediano</p>
+                  </div>
+                </div>
+                <div class="activity-right">
+                  <span class="status-badge progress-tag">En proceso</span>
+                  <span class="time">4h</span>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="activity-item" data-search="visita juan perez seguimiento completada">
+                <div class="activity-left">
+                  <div class="activity-icon green-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                  </div>
+                  <div class="activity-text">
+                    <h4 class="title">Visita</h4>
+                    <p class="details">Juan Pérez - Visita de seguimiento</p>
+                  </div>
+                </div>
+                <div class="activity-right">
+                  <span class="status-badge success-tag">Completada</span>
+                  <span class="time">4h</span>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="activity-item" data-search="formulario ana rodriguez pendiente revision">
+                <div class="activity-left">
+                  <div class="activity-icon pink-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                  </div>
+                  <div class="activity-text">
+                    <h4 class="title">Formulario</h4>
+                    <p class="details">Ana Rodríguez - Pendiente revisión</p>
+                  </div>
+                </div>
+                <div class="activity-right">
+                  <span class="status-badge alert-tag">Pendiente</span>
+                  <span class="time">4h</span>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="activity-item" data-search="alerta de seguimiento max revision veterinaria pendiente">
+                <div class="activity-left">
+                  <div class="activity-icon orange-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </div>
+                  <div class="activity-text">
+                    <h4 class="title">Alerta de seguimiento</h4>
+                    <p class="details">Max (ID: 1234) - Revisión veterinaria</p>
+                  </div>
+                </div>
+                <div class="activity-right">
+                  <span class="status-badge alert-tag">Pendiente</span>
+                  <span class="time">4h</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+          
+          <!-- Six Stats Grid -->
+          <div class="stats-grid">
+            
+            <div class="stat-card" data-stat="solicitudes">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Solicitudes nuevas</span>
+            </div>
+            
+            <div class="stat-card" data-stat="formularios">
+              <span class="stat-number">8</span>
+              <span class="stat-label">Formularios</span>
+            </div>
+            
+            <div class="stat-card" data-stat="visitas">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Visitas agendadas</span>
+            </div>
+            
+            <div class="stat-card" data-stat="seguimientos">
+              <span class="stat-number">23</span>
+              <span class="stat-label">Seguimientos</span>
+            </div>
+            
+            <div class="stat-card" data-stat="alertas">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Alertas</span>
+            </div>
+            
+            <div class="stat-card" data-stat="disponibles">
+              <span class="stat-number" id="availablePetsCount">100</span>
+              <span class="stat-label">Peludos disponibles</span>
+            </div>
+
+          </div>
+
+          <!-- Calendar Card -->
+          <div class="card calendar-card">
+            <div class="card-header border-none">
+              <div class="title-with-icon">
+                <span class="calendar-title-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                </span>
+                <h2>Calendario</h2>
+              </div>
+            </div>
+            
+            <div class="calendar-wrapper">
+              <div class="days-header">
+                <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+              </div>
+              <div class="dates-grid">
+                <!-- Row 1 -->
+                <span class="prev-month">28</span>
+                <span class="prev-month">29</span>
+                <span class="prev-month">30</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <!-- Row 2 -->
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <!-- Row 3 -->
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <!-- Row 4 -->
+                <span>19</span>
+                <span>20</span>
+                <span class="current-day">21</span>
+                <span>22</span>
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <!-- Row 5 -->
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span class="next-month">1</span>
+                <span class="next-month">2</span>
+                <span class="next-month">3</span>
+                <span class="next-month">4</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Animal Action Banner Card -->
+          <div class="card banner-card" id="addAnimalBanner">
+            <div class="banner-content">
+              <div class="banner-left">
+                <span class="plus-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+                </span>
+                <h3>Agrega un nuevo peludo</h3>
+              </div>
+              <div class="banner-illustration">
+                <!-- Clean, highly stylized vector art SVG of dog and cat side-by-side -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="140" height="90">
+                  <defs>
+                    <linearGradient id="petGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff"/>
+                      <stop offset="100%" stop-color="#f0f5ff"/>
+                    </linearGradient>
+                  </defs>
+                  
+                  <!-- Food Bowl -->
+                  <ellipse cx="80" cy="85" rx="16" ry="6" fill="#ffd166"/>
+                  <ellipse cx="80" cy="83" rx="14" ry="4" fill="#ffb703"/>
+                  <path d="M 68 84 Q 80 87 92 84 Q 90 91 80 91 Q 70 91 68 84 Z" fill="#e76f51"/>
+                  <ellipse cx="80" cy="82" rx="6" ry="2" fill="#d62828"/>
+                  
+                  <!-- CAT (Left) -->
+                  <!-- Cat Tail -->
+                  <path d="M 35 78 C 25 78 20 60 25 55 C 28 52 30 65 37 70" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+                  <!-- Cat Body -->
+                  <ellipse cx="48" cy="72" rx="15" ry="18" fill="url(#petGrad)"/>
+                  <!-- Cat Head -->
+                  <circle cx="48" cy="50" r="13" fill="url(#petGrad)"/>
+                  <!-- Cat Ears -->
+                  <polygon points="37,45 35,32 46,40" fill="#ffffff"/>
+                  <polygon points="37,45 35,32 46,40" fill="#ffb5a7" transform="scale(0.8) translate(11, 10)"/>
+                  <polygon points="59,45 61,32 50,40" fill="#ffffff"/>
+                  <polygon points="59,45 61,32 50,40" fill="#ffb5a7" transform="scale(0.8) translate(14, 10)"/>
+                  <!-- Cat Eyes -->
+                  <circle cx="43" cy="48" r="1.5" fill="#1d3557"/>
+                  <circle cx="53" cy="48" r="1.5" fill="#1d3557"/>
+                  <!-- Cat Nose/Mouth -->
+                  <polygon points="48,51 47,52 49,52" fill="#ff9f1c"/>
+                  <path d="M 46 54 Q 48 56 48 54 Q 48 56 50 54" fill="none" stroke="#1d3557" stroke-width="0.8"/>
+                  <!-- Cat Whiskers -->
+                  <line x1="33" y1="52" x2="25" y2="51" stroke="#ccc" stroke-width="0.8"/>
+                  <line x1="33" y1="55" x2="24" y2="56" stroke="#ccc" stroke-width="0.8"/>
+                  <line x1="63" y1="52" x2="71" y2="51" stroke="#ccc" stroke-width="0.8"/>
+                  <line x1="63" y1="55" x2="72" y2="56" stroke="#ccc" stroke-width="0.8"/>
+                  <!-- Cat Paws -->
+                  <circle cx="42" cy="85" r="4.5" fill="#ffffff"/>
+                  <circle cx="54" cy="85" r="4.5" fill="#ffffff"/>
+
+                  <!-- DOG (Right) -->
+                  <!-- Dog Tail -->
+                  <path d="M 125 70 C 138 60 145 55 142 45 C 138 40 133 55 125 65" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+                  <!-- Dog Body -->
+                  <ellipse cx="112" cy="70" rx="18" ry="20" fill="url(#petGrad)"/>
+                  <!-- Dog Head -->
+                  <circle cx="112" cy="46" r="15" fill="url(#petGrad)"/>
+                  <!-- Dog Ears -->
+                  <path d="M 98 42 Q 92 48 94 60 Q 98 62 101 50 Z" fill="#3d5a80"/>
+                  <path d="M 126 42 Q 132 48 130 60 Q 126 62 123 50 Z" fill="#3d5a80"/>
+                  <!-- Dog Spot on Eye -->
+                  <ellipse cx="106" cy="43" rx="5" ry="6" fill="#3d5a80" opacity="0.15"/>
+                  <!-- Dog Eyes -->
+                  <circle cx="106" cy="43" r="2" fill="#1d3557"/>
+                  <circle cx="118" cy="43" r="2" fill="#1d3557"/>
+                  <!-- Dog Nose/Mouth -->
+                  <ellipse cx="112" cy="48" rx="3" ry="2" fill="#1d3557"/>
+                  <path d="M 109 52 Q 112 55 115 52" fill="none" stroke="#1d3557" stroke-width="1.2" stroke-linecap="round"/>
+                  <!-- Dog Tongue -->
+                  <path d="M 111 53 Q 112 59 114 53 Z" fill="#f28482"/>
+                  <!-- Dog Paws -->
+                  <circle cx="104" cy="86" r="5" fill="#ffffff"/>
+                  <circle cx="120" cy="86" r="5" fill="#ffffff"/>
+                  
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- ADD ANIMAL MODAL POPUP -->
+  <div class="modal-overlay" id="addAnimalModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Registrar Nuevo Peludo</h2>
+        <button class="close-modal-btn" id="closeModalBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      </div>
+      <form class="modal-form" id="addAnimalForm">
+        <div class="form-group">
+          <label for="petName">Nombre del peludo</label>
+          <input type="text" id="petName" placeholder="Ej. Rocky, Luna, Milo" required autocomplete="off">
+        </div>
+        <div class="form-row">
+          <div class="form-group flex-1">
+            <label for="petType">Tipo de mascota</label>
+            <select id="petType">
+              <option value="Perro">Perro</option>
+              <option value="Gato">Gato</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group flex-1">
+            <label for="petSize">Tamaño/Detalles</label>
+            <select id="petSize">
+              <option value="Perro pequeño">Pequeño</option>
+              <option value="Perro mediano" selected>Mediano</option>
+              <option value="Perro grande">Grande</option>
+              <option value="Cachorro">Cachorro</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="adopterName">Solicitante (Opcional)</label>
+          <input type="text" id="adopterName" placeholder="Ej. María García, Juan Pérez" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="petStatus">Estado inicial</label>
+          <select id="petStatus">
+            <option value="En proceso">En proceso</option>
+            <option value="Pendiente" selected>Pendiente</option>
+            <option value="Completada">Completada</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Añadir al registro</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="successToast">
+    <div class="toast-content">
+      <span class="toast-check-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </span>
+      <p id="toastMessage">¡Peludo agregado al registro con éxito!</p>
+    </div>
+  </div>
+
+  <!-- Javascript Logic -->
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* Adopciones — layout overrides; tokens & components live in styles.css */
+
+.main-content {
+  overflow: hidden;
+}
+
+/* Card sin padding global: tabla a sangre */
+.adoptions-card {
+  padding: 0;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.adoptions-card-header {
+  margin-bottom: 0;
+  padding: 16px 24px 0;
+}
+
+.adoptions-card-header.border-bottom {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.table-scroll {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Columnas */
+.adoptions-table th:first-child  { width: 180px; }
+.adoptions-table th:nth-child(2) { width: 160px; }
+.adoptions-table th:nth-child(3) { width: 90px; }
+.adoptions-table th:nth-child(4) { width: 130px; }
+.adoptions-table th:nth-child(5) { width: 180px; }
+.adoptions-table th:nth-child(6) { width: 120px; }
+.adoptions-table th:last-child   { width: 130px; }
+
+/* Celda mascota (mismo patrón que activity-left en Inicio) */
+.pet-cell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pet-initial {
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pet-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.adopter-name,
+.stage-cell {
+  color: #4a5565;
+}
+
+.code-cell {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.date-cell {
+  font-size: 12px;
+  color: #6a7282;
+  font-family: 'Inter', sans-serif;
+}
+
+.adoptions-table tbody tr {
+  cursor: pointer;
+}
